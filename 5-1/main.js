@@ -18,3 +18,10 @@ const profiles = {
     },
   ],
 };
+
+const profilesArray = profiles.profiles.map((profile) => {
+  return `${profile.name}:${profile.age}`;
+});
+profilesArray.forEach((profile) => {
+  console.log(profile);
+});
